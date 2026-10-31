@@ -1,0 +1,15 @@
+{
+ "_source": "OpenStreetMap Nominatim lookups (2026-10-28) for places missing from GeoNames cities500",
+ "Minocqua, Wisconsin, United States": [45.871342, -89.710981],
+ "Powell Butte, Oregon, United States": [44.247531, -121.017775],
+ "Veikkola, Finland": [60.269363, 24.442697],
+ "Westport, Ontario, Canada": [44.678462, -76.397463],
+ "Rose Bud, Arkansas, United States": [35.332014, -92.081281],
+ "Highland, Michigan, United States": [42.652437, -83.625019],
+ "Amissville, Virginia, United States": [38.671508, -77.995552],
+ "Tyresö, Sweden": [59.216667, 18.333333],
+ "Alvaton, Kentucky, United States": [36.873375, -86.353046],
+ "Leaburg, Oregon, United States": [44.107477, -122.676350],
+ "Leina, Pärnumaa, Estonia": [58.218569, 24.520001],
+ "Nol, Sweden": [57.917319, 12.065799]
+}

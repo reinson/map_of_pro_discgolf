@@ -1,0 +1,1271 @@
+[
+ {
+  "slug": "supreme-flight-open",
+  "name": "Supreme Flight Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96401
+  ],
+  "start": "2026-02-27",
+  "end": "2026-03-01",
+  "location": "Brooksville, Florida, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - Discraft’s Supreme Flight Open Presented by Florida’s Adventure Coast",
+  "divisions": {
+   "MPO": {
+    "players": 96,
+    "winner": "Richard Wysocki",
+    "winner_pdga": 38008,
+    "winning_total": 171,
+    "winning_to_par": -24
+   },
+   "FPO": {
+    "players": 44,
+    "winner": "Ohn Scoggins",
+    "winner_pdga": 48976,
+    "winning_total": 183,
+    "winning_to_par": -18
+   }
+  },
+  "geo": {
+   "lat": 28.55554,
+   "lon": -82.38991,
+   "method": "geonames",
+   "geonameid": 4148986,
+   "matched": "Brooksville",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "big-easy-open",
+  "name": "Big Easy Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96402
+  ],
+  "start": "2026-03-13",
+  "end": "2026-03-15",
+  "location": "New Orleans, Louisiana, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - MVP Big Easy Open presented by Flight Factory",
+  "divisions": {
+   "MPO": {
+    "players": 99,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 196,
+    "winning_to_par": -11
+   },
+   "FPO": {
+    "players": 37,
+    "winner": "Holyn Handley",
+    "winner_pdga": 133547,
+    "winning_total": 195,
+    "winning_to_par": -9
+   }
+  },
+  "geo": {
+   "lat": 29.95465,
+   "lon": -90.07507,
+   "method": "geonames",
+   "geonameid": 4335045,
+   "matched": "New Orleans",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "queen-city-classic",
+  "name": "Queen City Classic",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96403
+  ],
+  "start": "2026-03-27",
+  "end": "2026-03-29",
+  "location": "Charlotte, North Carolina, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - Queen City Classic presented by Another Round",
+  "divisions": {
+   "MPO": {
+    "players": 112,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 163,
+    "winning_to_par": -23
+   },
+   "FPO": {
+    "players": 52,
+    "winner": "Jessica Gurthie",
+    "winner_pdga": 50656,
+    "winning_total": 187,
+    "winning_to_par": -11
+   }
+  },
+  "geo": {
+   "lat": 35.22709,
+   "lon": -80.84313,
+   "method": "geonames",
+   "geonameid": 4460243,
+   "matched": "Charlotte",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "champions-cup",
+  "name": "PDGA Champions Cup",
+  "series": "Major",
+  "division_series": {},
+  "pdga_event_ids": [
+   97336
+  ],
+  "start": "2026-04-09",
+  "end": "2026-04-12",
+  "location": "Lynchburg & Bedford County, Virginia, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "2026 PDGA Champions Cup Presented by Vessi",
+  "divisions": {
+   "MPO": {
+    "players": 100,
+    "winner": "Niklas Anttila",
+    "winner_pdga": 91249,
+    "winning_total": 249,
+    "winning_to_par": -27
+   },
+   "FPO": {
+    "players": 48,
+    "winner": "Silva Saarinen",
+    "winner_pdga": 107335,
+    "winning_total": 259,
+    "winning_to_par": -17
+   }
+  },
+  "geo": {
+   "lat": 37.41375,
+   "lon": -79.14225,
+   "method": "geonames",
+   "geonameid": 4771075,
+   "matched": "Lynchburg",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "jonesboro-open",
+  "name": "Jonesboro Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96404
+  ],
+  "start": "2026-04-17",
+  "end": "2026-04-19",
+  "location": "Jonesboro, Arkansas, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - Play it Again Sports Jonesboro Open presented by Westside Discs",
+  "divisions": {
+   "MPO": {
+    "players": 109,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 158,
+    "winning_to_par": -31
+   },
+   "FPO": {
+    "players": 38,
+    "winner": "Henna Blomroos",
+    "winner_pdga": 59227,
+    "winning_total": 181,
+    "winning_to_par": -14
+   }
+  },
+  "geo": {
+   "lat": 35.8423,
+   "lon": -90.70428,
+   "method": "geonames",
+   "geonameid": 4116834,
+   "matched": "Jonesboro",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "kansas-city-wide-open",
+  "name": "Kansas City Wide Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96407
+  ],
+  "start": "2026-04-24",
+  "end": "2026-04-26",
+  "location": "Liberty, Missouri, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - GRIPeq 44th Kansas City Wide Open presented by Nexus Disc Golf",
+  "divisions": {
+   "MPO": {
+    "players": 108,
+    "winner": "Cole Redalen",
+    "winner_pdga": 79748,
+    "winning_total": 144,
+    "winning_to_par": -23
+   },
+   "FPO": {
+    "players": 40,
+    "winner": "Eveliina Salonen",
+    "winner_pdga": 64927,
+    "winning_total": 194,
+    "winning_to_par": -13
+   }
+  },
+  "geo": {
+   "lat": 39.24611,
+   "lon": -94.41912,
+   "method": "geonames",
+   "geonameid": 4395052,
+   "matched": "Liberty",
+   "country_code": "US",
+   "ambiguous": true
+  }
+ },
+ {
+  "slug": "waco",
+  "name": "WACO",
+  "series": "JomezPro",
+  "division_series": {},
+  "pdga_event_ids": [
+   102001
+  ],
+  "start": "2026-05-01",
+  "end": "2026-05-03",
+  "location": "Waco, Texas, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT JomezPro - Innova presents WACO powered by Legit Disc Golf",
+  "divisions": {
+   "MPO": {
+    "players": 113,
+    "winner": "Emerson Keith",
+    "winner_pdga": 47472,
+    "winning_total": 163,
+    "winning_to_par": -29
+   },
+   "FPO": {
+    "players": 34,
+    "winner": "Ohn Scoggins",
+    "winner_pdga": 48976,
+    "winning_total": 188,
+    "winning_to_par": -13
+   }
+  },
+  "geo": {
+   "lat": 31.54933,
+   "lon": -97.14667,
+   "method": "geonames",
+   "geonameid": 4739526,
+   "matched": "Waco",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "austin-open",
+  "name": "Barbasol Open at Austin",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96408
+  ],
+  "start": "2026-05-07",
+  "end": "2026-05-10",
+  "location": "Austin, Texas, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT+ Barbasol Open at Austin presented by Hampton Inn/Home2 Suites Austin East",
+  "divisions": {
+   "MPO": {
+    "players": 108,
+    "winner": "Paul Ulibarri",
+    "winner_pdga": 27171,
+    "winning_total": 222,
+    "winning_to_par": -36
+   },
+   "FPO": {
+    "players": 50,
+    "winner": "Ohn Scoggins",
+    "winner_pdga": 48976,
+    "winning_total": 232,
+    "winning_to_par": -28
+   }
+  },
+  "geo": {
+   "lat": 30.26715,
+   "lon": -97.74306,
+   "method": "geonames",
+   "geonameid": 4671654,
+   "matched": "Austin",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "otb-open",
+  "name": "OTB Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96409
+  ],
+  "start": "2026-05-21",
+  "end": "2026-05-24",
+  "location": "Stockton, California, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT+ / WGE - OTB Open by MVP Disc Sports",
+  "divisions": {
+   "MPO": {
+    "players": 108,
+    "winner": "Calvin Heimburg",
+    "winner_pdga": 45971,
+    "winning_total": 225,
+    "winning_to_par": -37
+   },
+   "FPO": {
+    "players": 45,
+    "winner": "Holyn Handley",
+    "winner_pdga": 133547,
+    "winning_total": 242,
+    "winning_to_par": -28
+   }
+  },
+  "geo": {
+   "lat": 37.9577,
+   "lon": -121.29078,
+   "method": "geonames",
+   "geonameid": 5399020,
+   "matched": "Stockton",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "cascade-challenge",
+  "name": "Cascade Challenge",
+  "series": "JomezPro",
+  "division_series": {},
+  "pdga_event_ids": [
+   98193
+  ],
+  "start": "2026-05-29",
+  "end": "2026-05-31",
+  "location": "Shelton, Washington, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT JomezPro - Discraft Cascade Challenge",
+  "divisions": {
+   "MPO": {
+    "players": 100,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 167,
+    "winning_to_par": -25
+   },
+   "FPO": {
+    "players": 37,
+    "winner": "Silva Saarinen",
+    "winner_pdga": 107335,
+    "winning_total": 170,
+    "winning_to_par": -25
+   }
+  },
+  "geo": {
+   "lat": 47.21509,
+   "lon": -123.10071,
+   "method": "geonames",
+   "geonameid": 5810176,
+   "matched": "Shelton",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "northwest-championship",
+  "name": "Northwest Championship",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96410
+  ],
+  "start": "2026-06-04",
+  "end": "2026-06-07",
+  "location": "Portland, Oregon, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT+ Northwest Championship Presented by Latitude 64°",
+  "divisions": {
+   "MPO": {
+    "players": 111,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 224,
+    "winning_to_par": -32
+   },
+   "FPO": {
+    "players": 44,
+    "winner": "Silva Saarinen",
+    "winner_pdga": 107335,
+    "winning_total": 236,
+    "winning_to_par": -34
+   }
+  },
+  "geo": {
+   "lat": 45.52345,
+   "lon": -122.67621,
+   "method": "geonames",
+   "geonameid": 5746545,
+   "matched": "Portland",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "parnu-open",
+  "name": "Pärnu Open",
+  "series": "EuroTour",
+  "division_series": {},
+  "pdga_event_ids": [
+   101074
+  ],
+  "start": "2026-06-12",
+  "end": "2026-06-14",
+  "location": "Leina, Pärnumaa, Estonia",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT EuroTour - Pärnu Open presented by Latitude 64",
+  "divisions": {
+   "MPO": {
+    "players": 102,
+    "winner": "Mauri Villmann",
+    "winner_pdga": 107197,
+    "winning_total": 155,
+    "winning_to_par": -37
+   },
+   "FPO": {
+    "players": 28,
+    "winner": "Anneli Tõugjas-Männiste",
+    "winner_pdga": 85484,
+    "winning_total": 177,
+    "winning_to_par": -15
+   }
+  },
+  "geo": {
+   "lat": 58.218569,
+   "lon": 24.520001,
+   "method": "override"
+  }
+ },
+ {
+  "slug": "european-open",
+  "name": "PDGA European Open",
+  "series": "Major",
+  "division_series": {},
+  "pdga_event_ids": [
+   97339
+  ],
+  "start": "2026-06-18",
+  "end": "2026-06-21",
+  "location": "Tallinn, Harjumaa, Estonia",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "2026 PDGA European Open",
+  "divisions": {
+   "MPO": {
+    "players": 112,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 216,
+    "winning_to_par": -36
+   },
+   "FPO": {
+    "players": 45,
+    "winner": "Eveliina Salonen",
+    "winner_pdga": 64927,
+    "winning_total": 243,
+    "winning_to_par": -21
+   }
+  },
+  "geo": {
+   "lat": 59.43696,
+   "lon": 24.75353,
+   "method": "geonames",
+   "geonameid": 588409,
+   "matched": "Tallinn",
+   "country_code": "EE",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "swedish-open",
+  "name": "Swedish Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96411
+  ],
+  "start": "2026-06-26",
+  "end": "2026-06-28",
+  "location": "Boras, Sweden",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - Swedish Open presented by Kastaplast",
+  "divisions": {
+   "MPO": {
+    "players": 112,
+    "winner": "Eagle McMahon",
+    "winner_pdga": 37817,
+    "winning_total": 157,
+    "winning_to_par": -26
+   },
+   "FPO": {
+    "players": 46,
+    "winner": "Silva Saarinen",
+    "winner_pdga": 107335,
+    "winning_total": 164,
+    "winning_to_par": -19
+   }
+  },
+  "geo": {
+   "lat": 57.72101,
+   "lon": 12.9401,
+   "method": "geonames",
+   "geonameid": 2720501,
+   "matched": "Borås",
+   "country_code": "SE",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "ale-open",
+  "name": "Ale Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96412
+  ],
+  "start": "2026-07-03",
+  "end": "2026-07-05",
+  "location": "Nol, Sweden",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - Ale Open presented by Discraft",
+  "divisions": {
+   "MPO": {
+    "players": 112,
+    "winner": "Richard Wysocki",
+    "winner_pdga": 38008,
+    "winning_total": 161,
+    "winning_to_par": -28
+   },
+   "FPO": {
+    "players": 47,
+    "winner": "Eveliina Salonen",
+    "winner_pdga": 64927,
+    "winning_total": 165,
+    "winning_to_par": -30
+   }
+  },
+  "geo": {
+   "lat": 57.917319,
+   "lon": 12.065799,
+   "method": "override"
+  }
+ },
+ {
+  "slug": "heinola-open",
+  "name": "Heinola Open",
+  "series": "Elite",
+  "division_series": {
+   "FPO": "EuroTour"
+  },
+  "pdga_event_ids": [
+   96413,
+   106208
+  ],
+  "start": "2026-07-10",
+  "end": "2026-07-12",
+  "location": "Heinola, Finland",
+  "upcoming": false,
+  "doubles": false,
+  "note": "FPO played as a separate EuroTour-only event (PDGA 106208)",
+  "pdga_title": null,
+  "divisions": {
+   "MPO": {
+    "players": 105,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 157,
+    "winning_to_par": -29
+   },
+   "FPO": {
+    "players": 25,
+    "winner": "Anniken Kristiansen Steen",
+    "winner_pdga": 109996,
+    "winning_total": 188,
+    "winning_to_par": -10
+   }
+  },
+  "geo": {
+   "lat": 61.20564,
+   "lon": 26.03811,
+   "method": "geonames",
+   "geonameid": 658288,
+   "matched": "Heinola",
+   "country_code": "FI",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "uswdgc",
+  "name": "U.S. Women's Disc Golf Championship",
+  "series": "Major",
+  "division_series": {},
+  "pdga_event_ids": [
+   97341
+  ],
+  "start": "2026-07-16",
+  "end": "2026-07-19",
+  "location": "Salt Lake City, Utah, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "2026 PDGA United States Women's Disc Golf Championships",
+  "divisions": {
+   "FPO": {
+    "players": 77,
+    "winner": "Silva Saarinen",
+    "winner_pdga": 107335,
+    "winning_total": 215,
+    "winning_to_par": -33
+   }
+  },
+  "geo": {
+   "lat": 40.76078,
+   "lon": -111.89105,
+   "method": "geonames",
+   "geonameid": 5780993,
+   "matched": "Salt Lake City",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "champions-landing-open",
+  "name": "Champions Landing Open",
+  "series": "JomezPro",
+  "division_series": {},
+  "pdga_event_ids": [
+   100195
+  ],
+  "start": "2026-07-24",
+  "end": "2026-07-26",
+  "location": "Emporia, Kansas, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": null,
+  "divisions": {
+   "MPO": {
+    "players": 76,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 188,
+    "winning_to_par": -10
+   },
+   "FPO": {
+    "players": 14,
+    "winner": "Ohn Scoggins",
+    "winner_pdga": 48976,
+    "winning_total": 223,
+    "winning_to_par": 4
+   }
+  },
+  "geo": {
+   "lat": 38.4039,
+   "lon": -96.18166,
+   "method": "geonames",
+   "geonameid": 4271086,
+   "matched": "Emporia",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "ledgestone-open",
+  "name": "Ledgestone Open",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96414
+  ],
+  "start": "2026-07-30",
+  "end": "2026-08-02",
+  "location": "Peoria, Illinois, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT+ Ledgestone Open",
+  "divisions": {
+   "MPO": {
+    "players": 156,
+    "winner": "Luke Taylor",
+    "winner_pdga": 102119,
+    "winning_total": 234,
+    "winning_to_par": -28
+   },
+   "FPO": {
+    "players": 55,
+    "winner": "Eveliina Salonen",
+    "winner_pdga": 64927,
+    "winning_total": 237,
+    "winning_to_par": -21
+   }
+  },
+  "geo": {
+   "lat": 40.69365,
+   "lon": -89.58899,
+   "method": "geonames",
+   "geonameid": 4905687,
+   "matched": "Peoria",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "sieravuori-challenge",
+  "name": "Sieravuori Challenge",
+  "series": "EuroTour",
+  "division_series": {},
+  "pdga_event_ids": [
+   101076
+  ],
+  "start": "2026-07-31",
+  "end": "2026-08-02",
+  "location": "Eura, Finland",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": null,
+  "divisions": {
+   "MPO": {
+    "players": 104,
+    "winner": "Nestori Tuhkanen",
+    "winner_pdga": 110462,
+    "winning_total": 152,
+    "winning_to_par": -28
+   },
+   "FPO": {
+    "players": 16,
+    "winner": "Saga Dahlstedt",
+    "winner_pdga": 308525,
+    "winning_total": 184,
+    "winning_to_par": -8
+   }
+  },
+  "geo": {
+   "lat": 61.13333,
+   "lon": 22.13333,
+   "method": "geonames",
+   "geonameid": 660077,
+   "matched": "Eura",
+   "country_code": "FI",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "discmania-challenge",
+  "name": "Discmania Challenge",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96415
+  ],
+  "start": "2026-08-07",
+  "end": "2026-08-09",
+  "location": "Indianola, Iowa, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - Discmania Challenge presented by TruBank",
+  "divisions": {
+   "MPO": {
+    "players": 116,
+    "winner": "Evan Smith",
+    "winner_pdga": 101574,
+    "winning_total": 160,
+    "winning_to_par": -32
+   },
+   "FPO": {
+    "players": 50,
+    "winner": "Ella Hansen",
+    "winner_pdga": 144112,
+    "winning_total": 177,
+    "winning_to_par": -18
+   }
+  },
+  "geo": {
+   "lat": 41.35805,
+   "lon": -93.55744,
+   "method": "geonames",
+   "geonameid": 4861719,
+   "matched": "Indianola",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "doubles-championship",
+  "name": "DGPT Doubles Championship",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96416
+  ],
+  "start": "2026-08-14",
+  "end": "2026-08-16",
+  "location": "Clearwater, Minnesota, United States",
+  "upcoming": false,
+  "doubles": true,
+  "note": null,
+  "pdga_title": "2026 DGPT Doubles Championship at The Preserve presented by Simon Line",
+  "divisions": {
+   "MPO": {
+    "players": 112,
+    "winner": "Richard Wysocki",
+    "winner_pdga": 38008,
+    "winning_total": 159,
+    "winning_to_par": -36
+   },
+   "FPO": {
+    "players": 40,
+    "winner": "Catrina Allen",
+    "winner_pdga": 44184,
+    "winning_total": 178,
+    "winning_to_par": -26
+   }
+  },
+  "geo": {
+   "lat": 45.41941,
+   "lon": -94.04887,
+   "method": "geonames",
+   "geonameid": 5021527,
+   "matched": "Clearwater",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "pro-worlds",
+  "name": "PDGA Pro World Championships",
+  "series": "Major",
+  "division_series": {},
+  "pdga_event_ids": [
+   97344
+  ],
+  "start": "2026-08-26",
+  "end": "2026-08-30",
+  "location": "Milford, Michigan, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "2026 PDGA Professional Disc Golf World Championships presented by 1st Phorm",
+  "divisions": {
+   "MPO": {
+    "players": 208,
+    "winner": "Silas Schultz",
+    "winner_pdga": 79047,
+    "winning_total": 293,
+    "winning_to_par": -35
+   },
+   "FPO": {
+    "players": 92,
+    "winner": "Eveliina Salonen",
+    "winner_pdga": 64927,
+    "winning_total": 299,
+    "winning_to_par": -43
+   }
+  },
+  "geo": {
+   "lat": 42.59364,
+   "lon": -83.59939,
+   "method": "geonames",
+   "geonameid": 5001972,
+   "matched": "Milford",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "lws-open",
+  "name": "LWS Open at Idlewild",
+  "series": "Elite",
+  "division_series": {},
+  "pdga_event_ids": [
+   96417
+  ],
+  "start": "2026-09-04",
+  "end": "2026-09-06",
+  "location": "Burlington, Kentucky, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT - LWS Open at Idlewild",
+  "divisions": {
+   "MPO": {
+    "players": 100,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 173,
+    "winning_to_par": -31
+   },
+   "FPO": {
+    "players": 43,
+    "winner": "Ohn Scoggins",
+    "winner_pdga": 48976,
+    "winning_total": 196,
+    "winning_to_par": -17
+   }
+  },
+  "geo": {
+   "lat": 39.02756,
+   "lon": -84.72411,
+   "method": "geonames",
+   "geonameid": 4286281,
+   "matched": "Burlington",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "green-mountain-championship",
+  "name": "Green Mountain Championship",
+  "series": "Playoffs",
+  "division_series": {},
+  "pdga_event_ids": [
+   96418
+  ],
+  "start": "2026-09-17",
+  "end": "2026-09-20",
+  "location": "Jeffersonville, Vermont, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT Playoffs - Green Mountain Championship presented by Discmania",
+  "divisions": {
+   "MPO": {
+    "players": 78,
+    "winner": "Raven Newsom",
+    "winner_pdga": 88212,
+    "winning_total": 211,
+    "winning_to_par": -41
+   },
+   "FPO": {
+    "players": 45,
+    "winner": "Ohn Scoggins",
+    "winner_pdga": 48976,
+    "winning_total": 234,
+    "winning_to_par": -20
+   }
+  },
+  "geo": {
+   "lat": 44.64394,
+   "lon": -72.82929,
+   "method": "geonames",
+   "geonameid": 5237459,
+   "matched": "Jeffersonville",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "moravian-open",
+  "name": "Moravian Open",
+  "series": "EuroTour",
+  "division_series": {},
+  "pdga_event_ids": [
+   101077
+  ],
+  "start": "2026-09-18",
+  "end": "2026-09-20",
+  "location": "Nový Jičín, Czech Republic",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": null,
+  "divisions": {
+   "MPO": {
+    "players": 58,
+    "winner": "Rasmus Saukkoriipi",
+    "winner_pdga": 136325,
+    "winning_total": 163,
+    "winning_to_par": -29
+   },
+   "FPO": {
+    "players": 10,
+    "winner": "Kristýna Jurčíková",
+    "winner_pdga": 210972,
+    "winning_total": 186,
+    "winning_to_par": -18
+   }
+  },
+  "geo": {
+   "lat": 49.59438,
+   "lon": 18.01028,
+   "method": "geonames",
+   "geonameid": 3069305,
+   "matched": "Nový Jičín",
+   "country_code": "CZ",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "mvp-open",
+  "name": "MVP Open x OTB",
+  "series": "Playoffs",
+  "division_series": {},
+  "pdga_event_ids": [
+   96419
+  ],
+  "start": "2026-09-24",
+  "end": "2026-09-27",
+  "location": "Leicester, Massachusetts, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": "DGPT Playoffs - MVP Open x OTB",
+  "divisions": {
+   "MPO": {
+    "players": 76,
+    "winner": "Richard Wysocki",
+    "winner_pdga": 38008,
+    "winning_total": 167,
+    "winning_to_par": -12
+   },
+   "FPO": {
+    "players": 39,
+    "winner": "Sintija Klezberga",
+    "winner_pdga": 229526,
+    "winning_total": 176,
+    "winning_to_par": -5
+   }
+  },
+  "geo": {
+   "lat": 42.24593,
+   "lon": -71.90868,
+   "method": "geonames",
+   "geonameid": 4941835,
+   "matched": "Leicester",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "silesia-open",
+  "name": "Silesia Open",
+  "series": "EuroTour",
+  "division_series": {},
+  "pdga_event_ids": [
+   101078
+  ],
+  "start": "2026-09-25",
+  "end": "2026-09-27",
+  "location": "Strzelce Opolskie, Poland",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": null,
+  "divisions": {
+   "MPO": {
+    "players": 44,
+    "winner": "Nestori Tuhkanen",
+    "winner_pdga": 110462,
+    "winning_total": 163,
+    "winning_to_par": -32
+   },
+   "FPO": {
+    "players": 6,
+    "winner": "Kristýna Jurčíková",
+    "winner_pdga": 210972,
+    "winning_total": 187,
+    "winning_to_par": -17
+   }
+  },
+  "geo": {
+   "lat": 50.5107,
+   "lon": 18.30056,
+   "method": "geonames",
+   "geonameid": 3084415,
+   "matched": "Strzelce Opolskie",
+   "country_code": "PL",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "usdgc",
+  "name": "United States Disc Golf Championship",
+  "series": "Major",
+  "division_series": {},
+  "pdga_event_ids": [
+   97346
+  ],
+  "start": "2026-10-08",
+  "end": "2026-10-11",
+  "location": "Rock Hill, South Carolina, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": "Live round-3 standings are pre-finals; final places come from the CSV",
+  "pdga_title": null,
+  "divisions": {
+   "MPO": {
+    "players": 101,
+    "winner": "Calvin Heimburg",
+    "winner_pdga": 45971,
+    "winning_total": 231,
+    "winning_to_par": -23
+   }
+  },
+  "geo": {
+   "lat": 34.92487,
+   "lon": -81.02508,
+   "method": "geonames",
+   "geonameid": 4593142,
+   "matched": "Rock Hill",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "throw-pink",
+  "name": "Throw Pink Women's Disc Golf Championship",
+  "series": "Major",
+  "division_series": {},
+  "pdga_event_ids": [
+   102613
+  ],
+  "start": "2026-10-08",
+  "end": "2026-10-11",
+  "location": "Rock Hill, South Carolina, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": null,
+  "pdga_title": null,
+  "divisions": {
+   "FPO": {
+    "players": 46,
+    "winner": "Holyn Handley",
+    "winner_pdga": 133547,
+    "winning_total": 258,
+    "winning_to_par": -18
+   }
+  },
+  "geo": {
+   "lat": 34.92487,
+   "lon": -81.02508,
+   "method": "geonames",
+   "geonameid": 4593142,
+   "matched": "Rock Hill",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "powerball-cup",
+  "name": "Powerball Cup (DGPT Championship)",
+  "series": "Championship",
+  "division_series": {},
+  "pdga_event_ids": [
+   96421
+  ],
+  "start": "2026-10-15",
+  "end": "2026-10-18",
+  "location": "Lynchburg, Virginia, United States",
+  "upcoming": false,
+  "doubles": false,
+  "note": "Round 1 is a one-hole starting-advantage round; totals include it",
+  "pdga_title": null,
+  "divisions": {
+   "MPO": {
+    "players": 32,
+    "winner": "Gannon Buhr",
+    "winner_pdga": 75412,
+    "winning_total": 232,
+    "winning_to_par": -46
+   },
+   "FPO": {
+    "players": 20,
+    "winner": "Silva Saarinen",
+    "winner_pdga": 107335,
+    "winning_total": 258,
+    "winning_to_par": -25
+   }
+  },
+  "geo": {
+   "lat": 37.41375,
+   "lon": -79.14225,
+   "method": "geonames",
+   "geonameid": 4771075,
+   "matched": "Lynchburg",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ },
+ {
+  "slug": "cactus-rock",
+  "name": "JomezPro Series Finale at Cactus Rock",
+  "series": "JomezPro",
+  "division_series": {},
+  "pdga_event_ids": [],
+  "start": "2026-11-06",
+  "end": "2026-11-08",
+  "location": "Tuscaloosa, Alabama, United States",
+  "upcoming": true,
+  "doubles": false,
+  "note": null,
+  "pdga_title": null,
+  "divisions": {},
+  "geo": {
+   "lat": 33.20984,
+   "lon": -87.56917,
+   "method": "geonames",
+   "geonameid": 4094455,
+   "matched": "Tuscaloosa",
+   "country_code": "US",
+   "ambiguous": false
+  }
+ }
+]

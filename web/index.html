@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disc Golf 2026 · Season Map</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Disc Golf <span>2026</span></h1>
+      <div class="segmented" id="mode">
+        <button data-value="players" class="active">Players</button>
+        <button data-value="events">Competitions</button>
+      </div>
+      <div class="segmented" id="division">
+        <button data-value="ALL" class="active">All</button>
+        <button data-value="MPO">MPO</button>
+        <button data-value="FPO">FPO</button>
+      </div>
+      <div class="segmented" id="top" title="Show only the top N of each division">
+        <button data-value="10">Top 10</button>
+        <button data-value="20">20</button>
+        <button data-value="30">30</button>
+        <button data-value="50">50</button>
+        <button data-value="100" class="active">100</button>
+      </div>
+      <div class="segmented" id="panels" title="Which maps to show">
+        <button data-value="both" class="active">Both maps</button>
+        <button data-value="na">N. America</button>
+        <button data-value="eu">Europe</button>
+      </div>
+      <div id="selection" class="selection-chip" hidden></div>
+      <div class="search">
+        <input id="search" type="search" placeholder="Search player…" autocomplete="off" />
+        <ul id="suggestions" hidden></ul>
+      </div>
+    </header>
+    <main>
+      <section class="maps">
+        <div class="map-panel na" data-panel="na">
+          <div class="map-label">North America<button class="close" data-close="na" title="Close this map">×</button></div>
+          <div id="map-na" class="map"></div>
+        </div>
+        <div class="map-panel eu" data-panel="eu">
+          <div class="map-label">Europe<button class="close" data-close="eu" title="Close this map">×</button></div>
+          <div id="map-eu" class="map"></div>
+        </div>
+      </section>
+      <aside id="sidebar"></aside>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
