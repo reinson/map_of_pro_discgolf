@@ -5,7 +5,7 @@ import { escapeHtml, fold, loadSeason } from './data.js';
 import { DualMap, avatarHtml } from './maps.js';
 import { eventDetailView, eventsListView, playerDetailView, playersListView } from './sidebar.js';
 
-const DEFAULTS = { mode: 'players', division: 'ALL', top: 100, panels: 'both', player: null, event: null, eventTab: null };
+const DEFAULTS = { mode: 'players', division: 'ALL', top: 20, panels: 'both', player: null, event: null, eventTab: null };
 const TOP_OPTIONS = [10, 20, 30, 50, 100];
 const state = { ...DEFAULTS };
 const sidebar = document.getElementById('sidebar');
