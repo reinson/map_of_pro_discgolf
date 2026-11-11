@@ -1249,15 +1249,25 @@
   "name": "JomezPro Series Finale at Cactus Rock",
   "series": "JomezPro",
   "division_series": {},
-  "pdga_event_ids": [],
+  "pdga_event_ids": [
+   104769
+  ],
   "start": "2026-11-06",
   "end": "2026-11-08",
   "location": "Tuscaloosa, Alabama, United States",
-  "upcoming": true,
+  "upcoming": false,
   "doubles": false,
-  "note": null,
+  "note": "MPO only; no FPO division was held",
   "pdga_title": null,
-  "divisions": {},
+  "divisions": {
+   "MPO": {
+    "players": 61,
+    "winner": "Sullivan Tipton",
+    "winner_pdga": 78817,
+    "winning_total": 185,
+    "winning_to_par": -13
+   }
+  },
   "geo": {
    "lat": 33.20984,
    "lon": -87.56917,

@@ -85,7 +85,8 @@ EVENTS = [
          start="2026-10-15", end="2026-10-18", location="Lynchburg, Virginia, United States",
          note="Round 1 is a one-hole starting-advantage round; totals include it",
          sources=[("live", "MPO", "96421_MPO_r5.json"), ("live", "FPO", "96421_FPO_r5.json")]),
-    dict(slug="cactus-rock", name="JomezPro Series Finale at Cactus Rock", series="JomezPro", pdga=[],
+    dict(slug="cactus-rock", name="JomezPro Series Finale at Cactus Rock", series="JomezPro", pdga=[104769],
          start="2026-11-06", end="2026-11-08", location="Tuscaloosa, Alabama, United States",
-         upcoming=True, sources=[]),
+         note="MPO only; no FPO division was held",
+         sources=[("live", "MPO", "104769_MPO_r3.json")]),
 ]
