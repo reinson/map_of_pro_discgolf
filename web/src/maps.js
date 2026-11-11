@@ -14,10 +14,24 @@ const PANELS = {
   eu: { el: 'map-eu', bounds: [[48, 4], [65, 29]] },
 };
 
-/** Europe/Africa longitudes go to the Europe panel; everything else (Americas, Pacific) to North America. */
-function panelFor(lat, lon) {
-  if (lon >= -30 && lon < 60) return { key: 'eu', latlng: [lat, lon] };
-  return { key: 'na', latlng: [lat, lon > 0 ? lon - 360 : lon] };
+const KEYS = Object.keys(PANELS);
+
+/**
+ * Every marker is drawn on both panels, so panning one map across the Atlantic shows the
+ * other side too. The home region (Europe/Africa longitudes → eu, everything else → na)
+ * only decides which panel zooms to a point when fitting.
+ */
+function regionOf(lon) {
+  return lon >= -30 && lon < 60 ? 'eu' : 'na';
+}
+
+/** On the North America panel, Asia/Pacific sits west of the Americas rather than east of Europe. */
+function latlngIn(key, lat, lon) {
+  return [lat, key === 'na' && lon >= 60 ? lon - 360 : lon];
+}
+
+function byPanel(make = () => []) {
+  return Object.fromEntries(KEYS.map((k) => [k, make(k)]));
 }
 
 export function avatarHtml(player, size = 36) {
@@ -181,9 +195,11 @@ export class DualMap {
   showGhosts(events, shifts) {
     this.clearGhosts();
     for (const event of events) {
-      const { key, latlng } = panelFor(event.lat, event.lon);
       const icon = eventIcon(event, { shift: shifts.get(event.slug) || 0, ghost: true });
-      this.panels[key].ghosts.addLayer(L.marker(latlng, { icon, interactive: false, keyboard: false }));
+      for (const key of KEYS) {
+        const latlng = latlngIn(key, event.lat, event.lon);
+        this.panels[key].ghosts.addLayer(L.marker(latlng, { icon, interactive: false, keyboard: false }));
+      }
     }
   }
 
@@ -241,24 +257,26 @@ export class DualMap {
   }
 
   showPlayers(players) {
-    const buckets = { na: [], eu: [] };
+    const buckets = byPanel();
     for (const player of players) {
-      const { key, latlng } = panelFor(player.lat, player.lon);
-      const m = L.marker(latlng, {
-        icon: playerIcon(player),
-        player,
-        title: player.name,
-        zIndexOffset: rankZ(player.rank),
-        riseOnHover: true,
-        riseOffset: 1e8,
-      });
-      m.bindTooltip(`<b>${escapeHtml(player.name)}</b><br>#${player.rank} ${player.division} · ${escapeHtml(player.home)}`, {
-        direction: 'top',
-        offset: [0, -18],
-      });
-      m.on('click', () => this.onPlayerClick(player.pdga));
-      buckets[key].push(m);
-      this.register('player', player.pdga, m, key);
+      const icon = playerIcon(player);
+      for (const key of KEYS) {
+        const m = L.marker(latlngIn(key, player.lat, player.lon), {
+          icon,
+          player,
+          title: player.name,
+          zIndexOffset: rankZ(player.rank),
+          riseOnHover: true,
+          riseOffset: 1e8,
+        });
+        m.bindTooltip(`<b>${escapeHtml(player.name)}</b><br>#${player.rank} ${player.division} · ${escapeHtml(player.home)}`, {
+          direction: 'top',
+          offset: [0, -18],
+        });
+        m.on('click', () => this.onPlayerClick(player.pdga));
+        buckets[key].push(m);
+        this.register('player', player.pdga, m, key);
+      }
     }
     for (const [key, ms] of Object.entries(buckets)) this.panels[key].players.addLayers(ms);
   }
@@ -267,18 +285,20 @@ export class DualMap {
     const shift = shiftCounter();
     const chains = new Map();
     for (const event of events) {
-      const { key, latlng } = panelFor(event.lat, event.lon);
       const icon = eventIcon(event, { active: event.slug === activeSlug, shift: shift(event) });
-      const m = L.marker(latlng, { icon, title: event.name, riseOnHover: true });
-      m.bindTooltip(eventTooltip(event), { direction: 'top', offset: [0, -10] });
-      m.on('click', () => this.onEventClick(event.slug));
-      this.panels[key].events.addLayer(m);
-      this.register('event', event.slug, m, key);
       // Heinola is Elite for MPO but EuroTour-only for FPO.
       const series = (division !== 'ALL' && event.division_series?.[division]) || event.series;
-      const chain = `${key}:${series === 'EuroTour' ? 'EuroTour' : 'tour'}`;
-      if (!chains.has(chain)) chains.set(chain, { key, euro: series === 'EuroTour', stops: [] });
-      chains.get(chain).stops.push({ latlng, event });
+      for (const key of KEYS) {
+        const latlng = latlngIn(key, event.lat, event.lon);
+        const m = L.marker(latlng, { icon, title: event.name, riseOnHover: true });
+        m.bindTooltip(eventTooltip(event), { direction: 'top', offset: [0, -10] });
+        m.on('click', () => this.onEventClick(event.slug));
+        this.panels[key].events.addLayer(m);
+        this.register('event', event.slug, m, key);
+        const chain = `${key}:${series === 'EuroTour' ? 'EuroTour' : 'tour'}`;
+        if (!chains.has(chain)) chains.set(chain, { key, euro: series === 'EuroTour', stops: [] });
+        chains.get(chain).stops.push({ latlng, event });
+      }
     }
     for (const { key, euro, stops } of chains.values()) {
       stops.sort((a, b) => (a.event.start || '').localeCompare(b.event.start || ''));
@@ -288,32 +308,36 @@ export class DualMap {
 
   /** A player's home plus every event they played, each labelled with the finishing place. */
   showPlayerFocus(player, rows, eventBySlug, schedule) {
-    const points = { na: [], eu: [] };
-    const home = panelFor(player.lat, player.lon);
-    const homeMarker = L.marker(home.latlng, { icon: playerIcon(player, { size: 52, focus: true }), zIndexOffset: 1000 });
-    homeMarker.bindTooltip(`<b>${escapeHtml(player.name)}</b><br>${escapeHtml(player.home)}`, { direction: 'top', offset: [0, -28] });
-    this.panels[home.key].focus.addLayer(homeMarker);
-    this.register('player', player.pdga, homeMarker, home.key);
-    points[home.key].push(home.latlng);
+    const points = byPanel();
+    const homeIcon = playerIcon(player, { size: 52, focus: true });
+    for (const key of KEYS) {
+      const homeMarker = L.marker(latlngIn(key, player.lat, player.lon), { icon: homeIcon, zIndexOffset: 1000 });
+      homeMarker.bindTooltip(`<b>${escapeHtml(player.name)}</b><br>${escapeHtml(player.home)}`, { direction: 'top', offset: [0, -28] });
+      this.panels[key].focus.addLayer(homeMarker);
+      this.register('player', player.pdga, homeMarker, key);
+    }
+    const homeRegion = regionOf(player.lon);
+    points[homeRegion].push(latlngIn(homeRegion, player.lat, player.lon));
 
     const shift = shiftCounter();
-    const route = { na: [], eu: [] };
+    const route = byPanel();
     for (const row of rows) {
       const event = eventBySlug.get(row.event);
-      const { key, latlng } = panelFor(event.lat, event.lon);
       const badge = { text: placeLabel(row), cls: placeClass(row) };
-      const m = L.marker(latlng, {
-        icon: eventIcon(event, { badge, shift: shift(event) }),
-        zIndexOffset: row.dnf ? 0 : 500 - row.place,
-      });
-      m.bindTooltip(eventTooltip(event, row), { direction: 'top', offset: [0, -12] });
-      m.on('click', () => this.onEventClick(event.slug));
-      this.panels[key].focus.addLayer(m);
-      this.register('event', event.slug, m, key);
-      route[key].push({ latlng, event });
-      points[key].push(latlng);
+      const icon = eventIcon(event, { badge, shift: shift(event) });
+      for (const key of KEYS) {
+        const latlng = latlngIn(key, event.lat, event.lon);
+        const m = L.marker(latlng, { icon, zIndexOffset: row.dnf ? 0 : 500 - row.place });
+        m.bindTooltip(eventTooltip(event, row), { direction: 'top', offset: [0, -12] });
+        m.on('click', () => this.onEventClick(event.slug));
+        this.panels[key].focus.addLayer(m);
+        this.register('event', event.slug, m, key);
+        route[key].push({ latlng, event });
+      }
+      const region = regionOf(event.lon);
+      points[region].push(latlngIn(region, event.lat, event.lon));
     }
-    // rows are chronological; each panel gets its own leg of the season (no NA↔EU jumps)
+    // rows are chronological; every panel draws the whole season, transatlantic legs included
     const played = new Set(rows.map((r) => r.event));
     const unplayed = schedule.filter((e) => !played.has(e.slug));
     const ghostShifts = new Map(unplayed.map((e) => [e.slug, shift(e)]));
@@ -330,27 +354,33 @@ export class DualMap {
 
   /** An event plus the home towns of the ranked players who played it, labelled with their place there. */
   showEventFocus(event, entries) {
-    const points = { na: [], eu: [] };
-    const ev = panelFor(event.lat, event.lon);
-    const evMarker = L.marker(ev.latlng, { icon: eventIcon(event, { active: true }), zIndexOffset: 1000 });
-    evMarker.bindTooltip(eventTooltip(event), { direction: 'top', offset: [0, -10] });
-    this.panels[ev.key].focus.addLayer(evMarker);
-    this.register('event', event.slug, evMarker, ev.key);
-    points[ev.key].push(ev.latlng);
+    const points = byPanel();
+    const evIcon = eventIcon(event, { active: true });
+    for (const key of KEYS) {
+      const evMarker = L.marker(latlngIn(key, event.lat, event.lon), { icon: evIcon, zIndexOffset: 1000 });
+      evMarker.bindTooltip(eventTooltip(event), { direction: 'top', offset: [0, -10] });
+      this.panels[key].focus.addLayer(evMarker);
+      this.register('event', event.slug, evMarker, key);
+    }
+    const evRegion = regionOf(event.lon);
+    points[evRegion].push(latlngIn(evRegion, event.lat, event.lon));
 
-    const buckets = { na: [], eu: [] };
+    const buckets = byPanel();
     for (const { player, row } of entries) {
-      const { key, latlng } = panelFor(player.lat, player.lon);
       const badge = { text: placeLabel(row), cls: placeClass(row) };
-      const m = L.marker(latlng, { icon: playerIcon(player, { badge }), player, title: player.name, zIndexOffset: rankZ(player.rank) });
-      m.bindTooltip(`<b>${escapeHtml(player.name)}</b> — ${placeLabel(row)}<br>${escapeHtml(player.home)}`, {
-        direction: 'top',
-        offset: [0, -18],
-      });
-      m.on('click', () => this.onPlayerClick(player.pdga));
-      buckets[key].push(m);
-      this.register('player', player.pdga, m, key);
-      points[key].push(latlng);
+      const icon = playerIcon(player, { badge });
+      for (const key of KEYS) {
+        const m = L.marker(latlngIn(key, player.lat, player.lon), { icon, player, title: player.name, zIndexOffset: rankZ(player.rank) });
+        m.bindTooltip(`<b>${escapeHtml(player.name)}</b> — ${placeLabel(row)}<br>${escapeHtml(player.home)}`, {
+          direction: 'top',
+          offset: [0, -18],
+        });
+        m.on('click', () => this.onPlayerClick(player.pdga));
+        buckets[key].push(m);
+        this.register('player', player.pdga, m, key);
+      }
+      const region = regionOf(player.lon);
+      points[region].push(latlngIn(region, player.lat, player.lon));
     }
     for (const [key, ms] of Object.entries(buckets)) this.panels[key].players.addLayers(ms);
     this.fitPoints(points);
