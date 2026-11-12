@@ -135,6 +135,18 @@ body {
   width: 280px;
 }
 
+.credit {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.credit:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
 .search input {
   width: 100%;
   padding: 7px 10px;
