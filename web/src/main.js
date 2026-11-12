@@ -41,12 +41,13 @@ function render({ fit = false } = {}) {
   } else if (state.event) {
     const event = season.eventBySlug.get(state.event);
     const tab = state.eventTab || (state.division !== 'ALL' ? state.division : Object.keys(event.divisions)[0]);
-    sidebar.innerHTML = eventDetailView(season, event, tab, state.top);
+    sidebar.innerHTML = eventDetailView(season, event, tab);
     const entries = [];
     for (const [div, rows] of Object.entries(season.results[event.slug] || {})) {
       for (const row of rows) {
         const player = row.pdga && season.playerById.get(row.pdga);
-        if (player && player.division === div && inFilter(player)) entries.push({ player, row });
+        // Every ranked player who played, regardless of the Top N filter: EuroTour fields rarely include top-20 players.
+        if (player && player.division === div && (state.division === 'ALL' || div === state.division)) entries.push({ player, row });
       }
     }
     maps.showEventFocus(event, entries);

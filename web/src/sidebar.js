@@ -115,7 +115,7 @@ export function playerDetailView(season, player, rows) {
     A dashed route means a tour event was skipped in between (EuroTour events not counted); hover its arrow to see them.</p>`;
 }
 
-export function eventDetailView(season, event, division, top) {
+export function eventDetailView(season, event, division) {
   const divs = Object.keys(event.divisions);
   const active = divs.includes(division) ? division : divs[0];
   const tabs = divs
@@ -149,7 +149,7 @@ export function eventDetailView(season, event, division, top) {
       event.upcoming
         ? '<p class="muted">This event hasn’t been played yet.</p>'
         : `<div class="tabs">${tabs}</div>
-    <p class="footnote">${DIV_NAMES[active]}. Avatars mark top-100 players; the map shows home towns of the top ${top} who played.</p>
+    <p class="footnote">${DIV_NAMES[active]}. Avatars mark top-100 players; the map shows home towns of all of them who played.</p>
     <table class="results">
       <thead><tr><th>Place</th><th>Player</th><th>Par</th><th>Total</th><th>Behind</th></tr></thead>
       <tbody>${rows}</tbody>
